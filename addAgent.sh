@@ -11,7 +11,5 @@ docker run --name consul -h $HOSTNAME \
     -p 8302:8302/udp \
     -p 8400:8400 \
     -p 8500:8500 \
-    -p 172.17.42.1:53:53 \
-    -p 172.17.42.1:53:53/udp \
     -d progrium/consul -advertise ${HOST_IP} \
     -join ${JOIN_IP}
